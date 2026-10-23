@@ -1,0 +1,16 @@
+name: fhir_to_omop
+version: '1.0.0'
+config-version: 2
+profile: fhir_to_omop
+model-paths: [models]
+test-paths: [tests]
+models:
+  fhir_to_omop:
+    staging:
+      +schema: staging
+      +materialized: view
+    omop:
+      +schema: omop
+      +materialized: table
+
+

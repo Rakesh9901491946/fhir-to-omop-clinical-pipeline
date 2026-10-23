@@ -1,0 +1,8 @@
+flowchart LR
+  S[Synthea FHIR R4 Bundles\nsynthetic data] --> I[Python validator\nredact, date shift, dedupe]
+  I --> R[(PostgreSQL raw schema)]
+  R --> D[dbt staging + OMOP models]
+  T[(Versioned terminology map)] --> D
+  D --> O[(OMOP CDM 5.4 subset)]
+  O --> Q[dbt tests + quality report]
+

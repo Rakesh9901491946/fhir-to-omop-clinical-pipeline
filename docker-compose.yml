@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16.4
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-clinical}
+      POSTGRES_USER: ${POSTGRES_USER:-clinical}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+    ports: ["${HOST_POSTGRES_PORT:-5433}:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-clinical} -d ${POSTGRES_DB:-clinical}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  pipeline:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-clinical}:${POSTGRES_PASSWORD:-change-me}@db:5432/${POSTGRES_DB:-clinical}
+      DEIDENTIFICATION_SALT: ${DEIDENTIFICATION_SALT:-local-demo-only}
+      DATE_SHIFT_DAYS: ${DATE_SHIFT_DAYS:-0}
+      DBT_HOST: db
+      POSTGRES_DB: ${POSTGRES_DB:-clinical}
+      POSTGRES_USER: ${POSTGRES_USER:-clinical}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+    depends_on:
+      db: {condition: service_healthy}
+    volumes: ["./data/fhir:/app/data/fhir:ro", "./dbt:/app/dbt"]
+    command: ["sh", "-c", "set -e; psql \"postgresql://$$POSTGRES_USER:$$POSTGRES_PASSWORD@db:5432/$$POSTGRES_DB\" -v ON_ERROR_STOP=1 -f /app/db/init/00_schemas.sql -f /app/db/init/01_terminology.sql; fhir-omop ingest /app/data/fhir; cd /app/dbt; dbt run --profiles-dir .; dbt test --profiles-dir .; fhir-omop profile /app/data/fhir --output /app/quality-report.json"]
+volumes:
+  pgdata:
+

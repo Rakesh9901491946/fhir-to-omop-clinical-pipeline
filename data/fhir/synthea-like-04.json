@@ -1,0 +1,3206 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-076",
+        "birthDate": "1966-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-076",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-076"
+        },
+        "period": {
+          "start": "2024-05-10T09:00:00Z",
+          "end": "2024-05-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-076",
+        "subject": {
+          "reference": "Patient/patient-076"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-076"
+        },
+        "onsetDateTime": "2024-05-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-076",
+        "subject": {
+          "reference": "Patient/patient-076"
+        },
+        "effectiveDateTime": "2024-05-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 136,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-076",
+        "subject": {
+          "reference": "Patient/patient-076"
+        },
+        "effectiveDateTime": "2024-05-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-076",
+        "subject": {
+          "reference": "Patient/patient-076"
+        },
+        "performedDateTime": "2024-05-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-076",
+        "subject": {
+          "reference": "Patient/patient-076"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-05-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-077",
+        "birthDate": "1967-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-077",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-077"
+        },
+        "period": {
+          "start": "2024-06-10T09:00:00Z",
+          "end": "2024-06-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-077",
+        "subject": {
+          "reference": "Patient/patient-077"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-077"
+        },
+        "onsetDateTime": "2024-06-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-077",
+        "subject": {
+          "reference": "Patient/patient-077"
+        },
+        "effectiveDateTime": "2024-06-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 137,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-077",
+        "subject": {
+          "reference": "Patient/patient-077"
+        },
+        "effectiveDateTime": "2024-06-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-077",
+        "subject": {
+          "reference": "Patient/patient-077"
+        },
+        "performedDateTime": "2024-06-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-077",
+        "subject": {
+          "reference": "Patient/patient-077"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-06-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-078",
+        "birthDate": "1968-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-078",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-078"
+        },
+        "period": {
+          "start": "2024-07-10T09:00:00Z",
+          "end": "2024-07-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-078",
+        "subject": {
+          "reference": "Patient/patient-078"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-078"
+        },
+        "onsetDateTime": "2024-07-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-078",
+        "subject": {
+          "reference": "Patient/patient-078"
+        },
+        "effectiveDateTime": "2024-07-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 138,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-078",
+        "subject": {
+          "reference": "Patient/patient-078"
+        },
+        "effectiveDateTime": "2024-07-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-078",
+        "subject": {
+          "reference": "Patient/patient-078"
+        },
+        "performedDateTime": "2024-07-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-078",
+        "subject": {
+          "reference": "Patient/patient-078"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-07-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-079",
+        "birthDate": "1969-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-079",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-079"
+        },
+        "period": {
+          "start": "2024-08-10T09:00:00Z",
+          "end": "2024-08-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-079",
+        "subject": {
+          "reference": "Patient/patient-079"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-079"
+        },
+        "onsetDateTime": "2024-08-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-079",
+        "subject": {
+          "reference": "Patient/patient-079"
+        },
+        "effectiveDateTime": "2024-08-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 139,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-079",
+        "subject": {
+          "reference": "Patient/patient-079"
+        },
+        "effectiveDateTime": "2024-08-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-079",
+        "subject": {
+          "reference": "Patient/patient-079"
+        },
+        "performedDateTime": "2024-08-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-079",
+        "subject": {
+          "reference": "Patient/patient-079"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-08-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-080",
+        "birthDate": "1970-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-080",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-080"
+        },
+        "period": {
+          "start": "2024-09-10T09:00:00Z",
+          "end": "2024-09-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-080",
+        "subject": {
+          "reference": "Patient/patient-080"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-080"
+        },
+        "onsetDateTime": "2024-09-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-080",
+        "subject": {
+          "reference": "Patient/patient-080"
+        },
+        "effectiveDateTime": "2024-09-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 120,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-080",
+        "subject": {
+          "reference": "Patient/patient-080"
+        },
+        "effectiveDateTime": "2024-09-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-080",
+        "subject": {
+          "reference": "Patient/patient-080"
+        },
+        "performedDateTime": "2024-09-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-080",
+        "subject": {
+          "reference": "Patient/patient-080"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-09-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-081",
+        "birthDate": "1971-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-081",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-081"
+        },
+        "period": {
+          "start": "2024-10-10T09:00:00Z",
+          "end": "2024-10-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-081",
+        "subject": {
+          "reference": "Patient/patient-081"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-081"
+        },
+        "onsetDateTime": "2024-10-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-081",
+        "subject": {
+          "reference": "Patient/patient-081"
+        },
+        "effectiveDateTime": "2024-10-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 121,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-081",
+        "subject": {
+          "reference": "Patient/patient-081"
+        },
+        "effectiveDateTime": "2024-10-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-081",
+        "subject": {
+          "reference": "Patient/patient-081"
+        },
+        "performedDateTime": "2024-10-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-081",
+        "subject": {
+          "reference": "Patient/patient-081"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-10-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-082",
+        "birthDate": "1972-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-082",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-082"
+        },
+        "period": {
+          "start": "2024-11-10T09:00:00Z",
+          "end": "2024-11-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-082",
+        "subject": {
+          "reference": "Patient/patient-082"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-082"
+        },
+        "onsetDateTime": "2024-11-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-082",
+        "subject": {
+          "reference": "Patient/patient-082"
+        },
+        "effectiveDateTime": "2024-11-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 122,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-082",
+        "subject": {
+          "reference": "Patient/patient-082"
+        },
+        "effectiveDateTime": "2024-11-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-082",
+        "subject": {
+          "reference": "Patient/patient-082"
+        },
+        "performedDateTime": "2024-11-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-082",
+        "subject": {
+          "reference": "Patient/patient-082"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-11-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-083",
+        "birthDate": "1973-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-083",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-083"
+        },
+        "period": {
+          "start": "2024-12-10T09:00:00Z",
+          "end": "2024-12-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-083",
+        "subject": {
+          "reference": "Patient/patient-083"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-083"
+        },
+        "onsetDateTime": "2024-12-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-083",
+        "subject": {
+          "reference": "Patient/patient-083"
+        },
+        "effectiveDateTime": "2024-12-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 123,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-083",
+        "subject": {
+          "reference": "Patient/patient-083"
+        },
+        "effectiveDateTime": "2024-12-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-083",
+        "subject": {
+          "reference": "Patient/patient-083"
+        },
+        "performedDateTime": "2024-12-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-083",
+        "subject": {
+          "reference": "Patient/patient-083"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-12-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-084",
+        "birthDate": "1974-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-084",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-084"
+        },
+        "period": {
+          "start": "2024-01-10T09:00:00Z",
+          "end": "2024-01-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-084",
+        "subject": {
+          "reference": "Patient/patient-084"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-084"
+        },
+        "onsetDateTime": "2024-01-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-084",
+        "subject": {
+          "reference": "Patient/patient-084"
+        },
+        "effectiveDateTime": "2024-01-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 124,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-084",
+        "subject": {
+          "reference": "Patient/patient-084"
+        },
+        "effectiveDateTime": "2024-01-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-084",
+        "subject": {
+          "reference": "Patient/patient-084"
+        },
+        "performedDateTime": "2024-01-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-084",
+        "subject": {
+          "reference": "Patient/patient-084"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-01-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-085",
+        "birthDate": "1975-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-085",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-085"
+        },
+        "period": {
+          "start": "2024-02-10T09:00:00Z",
+          "end": "2024-02-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-085",
+        "subject": {
+          "reference": "Patient/patient-085"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-085"
+        },
+        "onsetDateTime": "2024-02-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-085",
+        "subject": {
+          "reference": "Patient/patient-085"
+        },
+        "effectiveDateTime": "2024-02-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 125,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-085",
+        "subject": {
+          "reference": "Patient/patient-085"
+        },
+        "effectiveDateTime": "2024-02-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-085",
+        "subject": {
+          "reference": "Patient/patient-085"
+        },
+        "performedDateTime": "2024-02-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-085",
+        "subject": {
+          "reference": "Patient/patient-085"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-02-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-086",
+        "birthDate": "1976-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-086",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-086"
+        },
+        "period": {
+          "start": "2024-03-10T09:00:00Z",
+          "end": "2024-03-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-086",
+        "subject": {
+          "reference": "Patient/patient-086"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-086"
+        },
+        "onsetDateTime": "2024-03-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-086",
+        "subject": {
+          "reference": "Patient/patient-086"
+        },
+        "effectiveDateTime": "2024-03-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 126,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-086",
+        "subject": {
+          "reference": "Patient/patient-086"
+        },
+        "effectiveDateTime": "2024-03-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-086",
+        "subject": {
+          "reference": "Patient/patient-086"
+        },
+        "performedDateTime": "2024-03-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-086",
+        "subject": {
+          "reference": "Patient/patient-086"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-03-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-087",
+        "birthDate": "1977-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-087",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-087"
+        },
+        "period": {
+          "start": "2024-04-10T09:00:00Z",
+          "end": "2024-04-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-087",
+        "subject": {
+          "reference": "Patient/patient-087"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-087"
+        },
+        "onsetDateTime": "2024-04-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-087",
+        "subject": {
+          "reference": "Patient/patient-087"
+        },
+        "effectiveDateTime": "2024-04-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 127,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-087",
+        "subject": {
+          "reference": "Patient/patient-087"
+        },
+        "effectiveDateTime": "2024-04-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-087",
+        "subject": {
+          "reference": "Patient/patient-087"
+        },
+        "performedDateTime": "2024-04-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-087",
+        "subject": {
+          "reference": "Patient/patient-087"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-04-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-088",
+        "birthDate": "1978-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-088",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-088"
+        },
+        "period": {
+          "start": "2024-05-10T09:00:00Z",
+          "end": "2024-05-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-088",
+        "subject": {
+          "reference": "Patient/patient-088"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-088"
+        },
+        "onsetDateTime": "2024-05-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-088",
+        "subject": {
+          "reference": "Patient/patient-088"
+        },
+        "effectiveDateTime": "2024-05-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 128,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-088",
+        "subject": {
+          "reference": "Patient/patient-088"
+        },
+        "effectiveDateTime": "2024-05-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-088",
+        "subject": {
+          "reference": "Patient/patient-088"
+        },
+        "performedDateTime": "2024-05-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-088",
+        "subject": {
+          "reference": "Patient/patient-088"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-05-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-089",
+        "birthDate": "1979-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-089",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-089"
+        },
+        "period": {
+          "start": "2024-06-10T09:00:00Z",
+          "end": "2024-06-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-089",
+        "subject": {
+          "reference": "Patient/patient-089"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-089"
+        },
+        "onsetDateTime": "2024-06-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-089",
+        "subject": {
+          "reference": "Patient/patient-089"
+        },
+        "effectiveDateTime": "2024-06-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 129,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-089",
+        "subject": {
+          "reference": "Patient/patient-089"
+        },
+        "effectiveDateTime": "2024-06-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-089",
+        "subject": {
+          "reference": "Patient/patient-089"
+        },
+        "performedDateTime": "2024-06-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-089",
+        "subject": {
+          "reference": "Patient/patient-089"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-06-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-090",
+        "birthDate": "1980-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-090",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-090"
+        },
+        "period": {
+          "start": "2024-07-10T09:00:00Z",
+          "end": "2024-07-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-090",
+        "subject": {
+          "reference": "Patient/patient-090"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-090"
+        },
+        "onsetDateTime": "2024-07-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-090",
+        "subject": {
+          "reference": "Patient/patient-090"
+        },
+        "effectiveDateTime": "2024-07-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 130,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-090",
+        "subject": {
+          "reference": "Patient/patient-090"
+        },
+        "effectiveDateTime": "2024-07-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-090",
+        "subject": {
+          "reference": "Patient/patient-090"
+        },
+        "performedDateTime": "2024-07-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-090",
+        "subject": {
+          "reference": "Patient/patient-090"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-07-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-091",
+        "birthDate": "1981-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-091",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-091"
+        },
+        "period": {
+          "start": "2024-08-10T09:00:00Z",
+          "end": "2024-08-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-091",
+        "subject": {
+          "reference": "Patient/patient-091"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-091"
+        },
+        "onsetDateTime": "2024-08-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-091",
+        "subject": {
+          "reference": "Patient/patient-091"
+        },
+        "effectiveDateTime": "2024-08-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 131,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-091",
+        "subject": {
+          "reference": "Patient/patient-091"
+        },
+        "effectiveDateTime": "2024-08-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-091",
+        "subject": {
+          "reference": "Patient/patient-091"
+        },
+        "performedDateTime": "2024-08-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-091",
+        "subject": {
+          "reference": "Patient/patient-091"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-08-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-092",
+        "birthDate": "1982-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-092",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-092"
+        },
+        "period": {
+          "start": "2024-09-10T09:00:00Z",
+          "end": "2024-09-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-092",
+        "subject": {
+          "reference": "Patient/patient-092"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-092"
+        },
+        "onsetDateTime": "2024-09-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-092",
+        "subject": {
+          "reference": "Patient/patient-092"
+        },
+        "effectiveDateTime": "2024-09-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 132,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-092",
+        "subject": {
+          "reference": "Patient/patient-092"
+        },
+        "effectiveDateTime": "2024-09-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-092",
+        "subject": {
+          "reference": "Patient/patient-092"
+        },
+        "performedDateTime": "2024-09-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-092",
+        "subject": {
+          "reference": "Patient/patient-092"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-09-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-093",
+        "birthDate": "1983-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-093",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-093"
+        },
+        "period": {
+          "start": "2024-10-10T09:00:00Z",
+          "end": "2024-10-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-093",
+        "subject": {
+          "reference": "Patient/patient-093"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-093"
+        },
+        "onsetDateTime": "2024-10-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-093",
+        "subject": {
+          "reference": "Patient/patient-093"
+        },
+        "effectiveDateTime": "2024-10-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 133,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-093",
+        "subject": {
+          "reference": "Patient/patient-093"
+        },
+        "effectiveDateTime": "2024-10-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-093",
+        "subject": {
+          "reference": "Patient/patient-093"
+        },
+        "performedDateTime": "2024-10-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-093",
+        "subject": {
+          "reference": "Patient/patient-093"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-10-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-094",
+        "birthDate": "1984-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-094",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-094"
+        },
+        "period": {
+          "start": "2024-11-10T09:00:00Z",
+          "end": "2024-11-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-094",
+        "subject": {
+          "reference": "Patient/patient-094"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-094"
+        },
+        "onsetDateTime": "2024-11-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-094",
+        "subject": {
+          "reference": "Patient/patient-094"
+        },
+        "effectiveDateTime": "2024-11-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 134,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-094",
+        "subject": {
+          "reference": "Patient/patient-094"
+        },
+        "effectiveDateTime": "2024-11-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-094",
+        "subject": {
+          "reference": "Patient/patient-094"
+        },
+        "performedDateTime": "2024-11-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-094",
+        "subject": {
+          "reference": "Patient/patient-094"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-11-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-095",
+        "birthDate": "1985-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-095",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-095"
+        },
+        "period": {
+          "start": "2024-12-10T09:00:00Z",
+          "end": "2024-12-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-095",
+        "subject": {
+          "reference": "Patient/patient-095"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-095"
+        },
+        "onsetDateTime": "2024-12-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-095",
+        "subject": {
+          "reference": "Patient/patient-095"
+        },
+        "effectiveDateTime": "2024-12-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 135,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-095",
+        "subject": {
+          "reference": "Patient/patient-095"
+        },
+        "effectiveDateTime": "2024-12-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-095",
+        "subject": {
+          "reference": "Patient/patient-095"
+        },
+        "performedDateTime": "2024-12-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-095",
+        "subject": {
+          "reference": "Patient/patient-095"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-12-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-096",
+        "birthDate": "1986-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-096",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-096"
+        },
+        "period": {
+          "start": "2024-01-10T09:00:00Z",
+          "end": "2024-01-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-096",
+        "subject": {
+          "reference": "Patient/patient-096"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-096"
+        },
+        "onsetDateTime": "2024-01-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-096",
+        "subject": {
+          "reference": "Patient/patient-096"
+        },
+        "effectiveDateTime": "2024-01-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 136,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-096",
+        "subject": {
+          "reference": "Patient/patient-096"
+        },
+        "effectiveDateTime": "2024-01-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-096",
+        "subject": {
+          "reference": "Patient/patient-096"
+        },
+        "performedDateTime": "2024-01-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-096",
+        "subject": {
+          "reference": "Patient/patient-096"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-01-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-097",
+        "birthDate": "1987-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-097",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-097"
+        },
+        "period": {
+          "start": "2024-02-10T09:00:00Z",
+          "end": "2024-02-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-097",
+        "subject": {
+          "reference": "Patient/patient-097"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-097"
+        },
+        "onsetDateTime": "2024-02-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-097",
+        "subject": {
+          "reference": "Patient/patient-097"
+        },
+        "effectiveDateTime": "2024-02-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 137,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-097",
+        "subject": {
+          "reference": "Patient/patient-097"
+        },
+        "effectiveDateTime": "2024-02-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-097",
+        "subject": {
+          "reference": "Patient/patient-097"
+        },
+        "performedDateTime": "2024-02-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-097",
+        "subject": {
+          "reference": "Patient/patient-097"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-02-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-098",
+        "birthDate": "1988-01-15",
+        "gender": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-098",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-098"
+        },
+        "period": {
+          "start": "2024-03-10T09:00:00Z",
+          "end": "2024-03-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-098",
+        "subject": {
+          "reference": "Patient/patient-098"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-098"
+        },
+        "onsetDateTime": "2024-03-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-098",
+        "subject": {
+          "reference": "Patient/patient-098"
+        },
+        "effectiveDateTime": "2024-03-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 138,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-098",
+        "subject": {
+          "reference": "Patient/patient-098"
+        },
+        "effectiveDateTime": "2024-03-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-098",
+        "subject": {
+          "reference": "Patient/patient-098"
+        },
+        "performedDateTime": "2024-03-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-098",
+        "subject": {
+          "reference": "Patient/patient-098"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-03-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-099",
+        "birthDate": "1989-01-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-099",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-099"
+        },
+        "period": {
+          "start": "2024-04-10T09:00:00Z",
+          "end": "2024-04-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-099",
+        "subject": {
+          "reference": "Patient/patient-099"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-099"
+        },
+        "onsetDateTime": "2024-04-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-099",
+        "subject": {
+          "reference": "Patient/patient-099"
+        },
+        "effectiveDateTime": "2024-04-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 139,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-099",
+        "subject": {
+          "reference": "Patient/patient-099"
+        },
+        "effectiveDateTime": "2024-04-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-099",
+        "subject": {
+          "reference": "Patient/patient-099"
+        },
+        "performedDateTime": "2024-04-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-099",
+        "subject": {
+          "reference": "Patient/patient-099"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-04-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-100",
+        "birthDate": "1990-01-15",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-100",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/patient-100"
+        },
+        "period": {
+          "start": "2024-05-10T09:00:00Z",
+          "end": "2024-05-10T09:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-100",
+        "subject": {
+          "reference": "Patient/patient-100"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-100"
+        },
+        "onsetDateTime": "2024-05-10T09:00:00Z",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10"
+            }
+          ],
+          "text": "Synthetic hypertension example"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-100",
+        "subject": {
+          "reference": "Patient/patient-100"
+        },
+        "effectiveDateTime": "2024-05-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Synthetic systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 120,
+          "unit": "mmHg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-status-100",
+        "subject": {
+          "reference": "Patient/patient-100"
+        },
+        "effectiveDateTime": "2024-05-10T09:00:00Z",
+        "status": "final",
+        "code": {
+          "text": "Synthetic smoking status"
+        },
+        "valueString": "never smoker"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-100",
+        "subject": {
+          "reference": "Patient/patient-100"
+        },
+        "performedDateTime": "2024-05-10T09:00:00Z",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185349003"
+            }
+          ],
+          "text": "Synthetic clinical procedure"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medication-request-100",
+        "subject": {
+          "reference": "Patient/patient-100"
+        },
+        "status": "active",
+        "intent": "order",
+        "authoredOn": "2024-05-10",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361"
+            }
+          ],
+          "text": "Synthetic prescription order"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: person
+    columns:
+      - name: person_id
+        tests: [not_null, unique]
+      - name: person_source_value
+        tests: [not_null, unique]
+  - name: visit_occurrence
+    columns:
+      - name: person_id
+        tests: [not_null, relationships: {to: ref('person'), field: person_id}]
+  - name: condition_occurrence
+    columns:
+      - name: person_id
+        tests: [not_null, relationships: {to: ref('person'), field: person_id}]
+  - name: measurement
+    columns:
+      - name: person_id
+        tests: [not_null, relationships: {to: ref('person'), field: person_id}]
+  - name: observation
+    columns:
+      - name: person_id
+        tests: [not_null, relationships: {to: ref('person'), field: person_id}]
+  - name: procedure_occurrence
+    columns:
+      - name: person_id
+        tests: [not_null, relationships: {to: ref('person'), field: person_id}]
+

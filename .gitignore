@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+target/
+dbt/logs/
+dbt/target/
+*.py[cod]
+quality-report.json
+

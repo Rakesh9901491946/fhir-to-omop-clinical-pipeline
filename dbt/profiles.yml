@@ -1,0 +1,14 @@
+fhir_to_omop:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('DBT_HOST', 'localhost') }}"
+      user: "{{ env_var('POSTGRES_USER', 'clinical') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD', 'change-me') }}"
+      port: "{{ env_var('DBT_PORT', '5432') | int }}"
+      dbname: "{{ env_var('POSTGRES_DB', 'clinical') }}"
+      schema: omop
+      search_path: "raw,staging,omop"
+      threads: 4
+
