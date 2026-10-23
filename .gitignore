@@ -5,6 +5,7 @@ __pycache__/
 target/
 dbt/logs/
 dbt/target/
+dbt/.user.yml
 *.py[cod]
 quality-report.json
 
